@@ -1,0 +1,46 @@
+#### "*********************************************"             
+#### "*          levi45@ vuplus-team.com          *"
+#### "*********************************************"
+
+####################### SoftCams ############################
+
+[reader]
+label                         = constantcw
+protocol                      = constcw
+device                        = /etc/tuxbox/config/constant.cw
+group                         = 3
+
+[reader]
+label                         = emulator
+protocol                      = emu
+device                        = /etc/tuxbox/config/SoftCam.Key
+#services                      = !afn
+caid                          = 090F,0500,1801,0604,2600,FFFF,0E00,4AE1,1010
+detect                        = cd
+ident                         = 090F:000000;0500:000000,023800,021110,007400,007800;1801:000000,007301,001101,002111;0604:000000;2600:000000;FFFF:000000;0E00:000000;4AE1:000011,000014,0000FE;1010:000000
+disablecrccws_only_for        = 0E00:000000
+group                         = 1
+emmcache                      = 2,1,2,1
+emu_auproviders               = 0604:010200;0E00:000000;4AE1:000011,000014,0000FE;1010:000000
+
+####################### AFN Config settings ############################
+
+[reader]
+label                         = AFN
+description                   = AFN-EMU
+enable                        = 1
+protocol                      = emu
+device                        = emulator
+caid                          = 0E00
+ecmwhitelist                  = 0E00:000099
+detect                        = cd
+group                         = 1
+emmcache                      = 1,5,31,1
+emu_auproviders               = 0E00:000000
+auprovid                      = 000E00
+cacheex                       = 1
+cacheex_maxhop                = 1
+cacheex_allow_request         = 1
+#services                      = afn
+
+####################### Your Server ############################
