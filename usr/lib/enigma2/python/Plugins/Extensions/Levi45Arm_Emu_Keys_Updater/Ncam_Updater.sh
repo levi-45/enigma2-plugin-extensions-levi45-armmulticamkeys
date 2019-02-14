@@ -4,7 +4,7 @@
 rm -R /usr/camd/Ncam_*
 ###############################################################################
 NcamUpdater="http://vuplus-team.com/addons/ArmMulticam/Armsh/Ncam_Updater.sh"
-NcamArm="http://vuplus-team.com/addons/ArmMulticam/Ncam_8.6"
+NcamArm="http://vuplus-team.com/addons/ArmMulticam/Ncam_8.7"
 echo ""
 echo ""
 echo "Downloading ${NcamUpdater}"
@@ -13,9 +13,9 @@ echo ""
 chmod 775 /usr/lib/enigma2/python/Plugins/Extensions/Levi45Arm_Emu_Keys_Updater/Ncam_Updater.sh
 echo ""
 echo "Downloading ${NcamArm}"
-wget ${NcamArm} -O /usr/camd/Ncam_8.6 || echo "Error: Couldn't connect to ${NcamArm}"
+wget ${NcamArm} -O /usr/camd/Ncam_8.7 || echo "Error: Couldn't connect to ${NcamArm}"
 echo ""
-chmod 775 /usr/camd/Ncam_8.6
+chmod 775 /usr/camd/Ncam_8.7
 echo ""
 echo ""
 echo "******************************************"
