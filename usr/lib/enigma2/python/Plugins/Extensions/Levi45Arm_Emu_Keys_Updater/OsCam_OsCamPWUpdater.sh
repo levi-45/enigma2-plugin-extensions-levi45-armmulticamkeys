@@ -7,7 +7,7 @@ rm -R /usr/camd/OScamPowervu_*
 ###############################################################################
 OsCam_OsCamPWUpdater="http://vuplus-team.com/addons/ArmMulticam/Armsh/OsCam_OsCamPWUpdater.sh"
 OscamArm="http://vuplus-team.com/addons/ArmMulticam/OScam_11492"
-OscamPowervuArm="http://vuplus-team.com/addons/ArmMulticam/OScamPowervu_11503"
+OscamPowervuArm="http://vuplus-team.com/addons/ArmMulticam/OScamPowervu_11504"
 echo ""
 echo ""
 echo "Downloading ${OsCam_OsCamPWUpdater}"
@@ -21,9 +21,9 @@ echo ""
 chmod 775 /usr/camd/OScam_11492
 echo ""
 echo "Downloading ${OscamPowervuArm}"
-wget ${OscamPowervuArm} -O /usr/camd/OScamPowervu_11503 || echo "Error: Couldn't connect to ${OscamPowervuArm}"
+wget ${OscamPowervuArm} -O /usr/camd/OScamPowervu_11504 || echo "Error: Couldn't connect to ${OscamPowervuArm}"
 echo ""
-chmod 775 /usr/camd/OScamPowervu_11503
+chmod 775 /usr/camd/OScamPowervu_11504
 echo ""
 echo ""
 echo "******************************************"

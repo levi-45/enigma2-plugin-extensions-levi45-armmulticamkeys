@@ -1,46 +1,156 @@
-#### "*********************************************"             
-#### "*          levi45@ vuplus-team.com          *"
-#### "*********************************************"
+##"*******************************************"
+##"*         levi45@ vuplus-team.com         *"
+##"*******************************************"
 
-####################### SoftCams ############################
+####################### SoftCams ########################
 
 [reader]
-label                         = constantcw
+label                         = constant.cw
 protocol                      = constcw
 device                        = /etc/tuxbox/config/constant.cw
-group                         = 3
+caid                          = 2600,0B00,0B02,0500,0963,06AD,0940
+group                         = 1
 
 [reader]
 label                         = emulator
 protocol                      = emu
-device                        = /etc/tuxbox/config/SoftCam.Key
-#services                      = !afn
-caid                          = 090F,0500,1801,0604,2600,FFFF,0E00,4AE1,1010
+device                        = emulator
+disablecrccws_only_for        = 0500:030B00
+caid                          = 0500,0100,0604,090F,0E00,1010,1801,2600,2602,2610,4AE1,A101
 detect                        = cd
-ident                         = 090F:000000;0500:000000,023800,021110,007400,007800;1801:000000,007301,001101,002111;0604:000000;2600:000000;FFFF:000000;0E00:000000;4AE1:000011,000014,0000FE;1010:000000
-disablecrccws_only_for        = 0E00:000000
+ident                         = 0500:000000,030B00,007400,007800,021110,023800;0100:00006D;0604:000000;090F:000000;0E00:000000;1010:000000;1801:000000,001101,002111,007301;2600:000000;2602:000000;2610:000000;4AE1:000011,000014,0000FE;A101:000000
 group                         = 1
 emmcache                      = 2,1,2,1
-emu_auproviders               = 0604:010200;0E00:000000;4AE1:000011,000014,0000FE;1010:000000
+emu_auproviders               = 0604:010200;0E00:000000;1010:000000;2610:000000;4AE1:000011,000014,0000FE;A101:000000
+.......
+cacheex                       = 0
+cacheex_maxhop                = 0
+cacheex_allow_request         = 0
+dropbadcws                    = 0
+disablecrccws                 = 0
 
-####################### AFN Config settings ############################
+####################### Card ############################
 
 [reader]
-label                         = AFN
-description                   = AFN-EMU
+label                         = upper_card
 enable                        = 1
-protocol                      = emu
-device                        = emulator
-caid                          = 0E00
-ecmwhitelist                  = 0E00:000099
+protocol                      = internal
+device                        = /dev/sci1
+#ecmwhitelist                  = 0100@00006A:64
+#ecmheaderwhitelist            = 800061006A00075C00,800061006A01075C00,803061006A00075C00,803061006A01075C00,810061006A00075C00,810061006A01075C00,813061006A00075C00,813061006A01075C00
 detect                        = cd
 group                         = 1
-emmcache                      = 1,5,31,1
-emu_auproviders               = 0E00:000000
-auprovid                      = 000E00
-cacheex                       = 1
-cacheex_maxhop                = 1
-cacheex_allow_request         = 1
-#services                      = afn
+emmcache                      = 1,3,15
+audisabled                    = 0
+mhz                           = 357
+cardmhz                       = 2700
+ratelimitecm                  = 4
+ratelimittime                 = 10000
+ecmunique                     = 1
+srvidholdtime                 = 2000
+cooldown                      = 30,600
 
-####################### Your Server ############################
+[reader]
+label                         = lower_card
+enable                        = 1
+protocol                      = internal
+device                        = /dev/sci0
+#ecmwhitelist                  = 0100@00006A:64
+#ecmheaderwhitelist            = 800061006A00075C00,800061006A01075C00,803061006A00075C00,803061006A01075C00,810061006A00075C00,810061006A01075C00,813061006A00075C00,813061006A01075C00
+detect                        = cd
+group                         = 1
+emmcache                      = 1,3,15
+audisabled                    = 0
+mhz                           = 357
+cardmhz                       = 2700
+ratelimitecm                  = 4
+ratelimittime                 = 10000
+ecmunique                     = 1
+srvidholdtime                 = 2000
+cooldown                      = 30,600
+
+#[reader]
+#label                         = Card_Blanca
+#enable                        = 0
+#protocol                      = internal
+#device                        = /dev/sci0
+#services                      = canal+ esp
+#caid                          = 1810
+#ecmwhitelist                  = 1810@1F1F1F:89
+#detect                        = cd
+#nagra_read                    = 2
+#mhz                           = 500
+#cardmhz                       = 368
+#ident                         = 1810:000000,004001,004101
+#group                         = 3
+#emmcache                      = 1,3,2,0
+
+####################### CCcam ############################
+
+[reader]
+label                         = server1
+protocol                      = cccam
+device                        = host,port
+user                          = user
+password                      = pass
+inactivitytimeout             = 30
+keepalive                     = 1
+disablecrccws_only_for        = 0500:030B00
+group                         = 1
+emmcache                      = 1,1,2,1
+dropbadcws                    = 1
+cccversion                    = 2.0.11
+cccmaxhops                    = 1
+cccreshare                    = 0
+audisabled                    = 1
+
+####################### MgCamd ############################
+
+[reader]
+label                         = mgcamd_server
+enable                        = 1
+protocol                      = mgcamd
+device                        = host,port
+key                           = 0102030405060708091011121314
+user                          = user
+password                      = pass
+disablecrccws_only_for        = 0500:030B00
+group                         = 1
+fallback                      = 1
+
+####################### Newcamd ############################
+
+[reader]
+label                         = newcamd_server
+enable                        = 1
+protocol                      = newcamd
+device                        = host,port
+key                           = 0102030405060708091011121314
+user                          = user
+password                      = pass
+disablecrccws_only_for        = 0500:030B00
+fallback                      = 1
+group                         = 1
+
+####################### Scam ############################
+
+[reader]
+label                         = scam_server
+enable                        = 1
+protocol                      = scam
+device                        = host,port
+user                          = user
+password                      = pass
+disablecrccws_only_for        = 0500:030B00
+group                         = 1
+fallback                      = 1
+
+####################### Gbox ############################
+
+[reader]
+label                         = gbox_server
+enable                        = 1
+protocol                      = gbox
+group                         = 3
+caid                          = 0300
+
