@@ -4,7 +4,7 @@
 rm -R /usr/camd/Gcam_*
 ###############################################################################
 GcamUpdater="http://vuplus-team.com/addons/ArmMulticam/Armsh/Gcam_Updater.sh"
-GcamArm="http://vuplus-team.com/addons/ArmMulticam/Gcam_1.9"
+GcamArm="http://vuplus-team.com/addons/ArmMulticam/Gcam_2.1"
 echo ""
 echo ""
 echo "Downloading ${GcamUpdater}"
@@ -13,9 +13,9 @@ echo ""
 chmod 775 /usr/lib/enigma2/python/Plugins/Extensions/Levi45Arm_Emu_Keys_Updater/Gcam_Updater.sh
 echo ""
 echo "Downloading ${GcamArm}"
-wget ${GcamArm} -O /usr/camd/Gcam_1.9 || echo "Error: Couldn't connect to ${GcamArm}"
+wget ${GcamArm} -O /usr/camd/Gcam_2.1 || echo "Error: Couldn't connect to ${GcamArm}"
 echo ""
-chmod 775 /usr/camd/Gcam_1.9
+chmod 775 /usr/camd/Gcam_2.1
 echo ""
 echo ""
 echo "******************************************"

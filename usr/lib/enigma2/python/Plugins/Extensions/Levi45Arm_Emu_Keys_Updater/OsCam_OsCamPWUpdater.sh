@@ -6,8 +6,8 @@ rm -R /usr/camd/OScam_*
 rm -R /usr/camd/OScamPowervu_*
 ###############################################################################
 OsCam_OsCamPWUpdater="http://vuplus-team.com/addons/ArmMulticam/Armsh/OsCam_OsCamPWUpdater.sh"
-OscamArm="http://vuplus-team.com/addons/ArmMulticam/OScam_11492"
-OscamPowervuArm="http://vuplus-team.com/addons/ArmMulticam/OScamPowervu_11504"
+OscamArm="http://vuplus-team.com/addons/ArmMulticam/OScam_11504"
+OscamPowervuArm="http://vuplus-team.com/addons/ArmMulticam/OScamPowervu_11523"
 echo ""
 echo ""
 echo "Downloading ${OsCam_OsCamPWUpdater}"
@@ -16,14 +16,14 @@ echo ""
 chmod 775 /usr/lib/enigma2/python/Plugins/Extensions/Levi45Arm_Emu_Keys_Updater/OsCam_OsCamPWUpdater.sh
 echo ""
 echo "Downloading ${OscamArm}"
-wget ${OscamArm} -O /usr/camd/OScam_11492 || echo "Error: Couldn't connect to ${OscamArm}"
+wget ${OscamArm} -O /usr/camd/OScam_11504 || echo "Error: Couldn't connect to ${OscamArm}"
 echo ""
-chmod 775 /usr/camd/OScam_11492
+chmod 775 /usr/camd/OScam_11504
 echo ""
 echo "Downloading ${OscamPowervuArm}"
-wget ${OscamPowervuArm} -O /usr/camd/OScamPowervu_11504 || echo "Error: Couldn't connect to ${OscamPowervuArm}"
+wget ${OscamPowervuArm} -O /usr/camd/OScamPowervu_11523 || echo "Error: Couldn't connect to ${OscamPowervuArm}"
 echo ""
-chmod 775 /usr/camd/OScamPowervu_11504
+chmod 775 /usr/camd/OScamPowervu_11523
 echo ""
 echo ""
 echo "******************************************"
