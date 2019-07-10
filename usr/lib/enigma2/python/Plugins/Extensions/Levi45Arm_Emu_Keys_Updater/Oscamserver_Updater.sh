@@ -1,7 +1,7 @@
 #!/bin/sh
 #DESCRIPTION=This script created by Levi45 @vuplus-team.com
 ###############################################################################
-Oscamserversh="http://vuplus-team.com/addons/ArmMulticam/Armsh/Oscamserver_Updater.sh"
+Oscamserversh="http://vuplus-team.com/addons/ArmMulticam/Arm/Oscamserver_Updater.sh"
 Oscamserver="http://vuplus-team.com/addons/oscam.server"
 echo ""
 echo ""
