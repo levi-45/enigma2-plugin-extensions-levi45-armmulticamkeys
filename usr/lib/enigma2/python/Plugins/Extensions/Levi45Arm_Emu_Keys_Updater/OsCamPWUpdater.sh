@@ -1,23 +1,23 @@
 #!/bin/sh
 #DESCRIPTION=This script created by Levi45 @www.vuplus-team.com
 ###############################################################################
-rm -R /usr/camd/OscamYmod_*
+rm -R /usr/camd/OScamPowervu_*
 ###############################################################################
-# Download and install OscamYmod
+# Download and install OScamPowervu
 cd /tmp 
 set -e
-wget "http://vuplus-team.com/addons/ArmMulticam/oscamymod.tar.gz"
+wget "http://vuplus-team.com/addons/ArmMulticam/oscampw.tar.gz"
 
-tar -xzf oscamymod.tar.gz -C /
+tar -xzf oscampw.tar.gz -C /
 set +e
-rm -f oscamymod.tar.gz
+rm -f oscampw.tar.gz
 cd ..
 
 sync
 echo "#########################################################"
 echo "#              Levi45 @WWW.VUPLUS-TEAM.COM              #"
 echo "#########################################################"
-echo "#           OscamYmod INSTALLED SUCCESSFULLY            #"
+echo "#          OScamPowervu INSTALLED SUCCESSFULLY          #"
 echo "#########################################################"
 echo "#                      GUI RESTARTING                   #"
 echo "#########################################################"

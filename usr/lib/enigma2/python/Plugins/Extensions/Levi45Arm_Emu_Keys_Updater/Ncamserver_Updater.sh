@@ -1,7 +1,7 @@
 #!/bin/sh
 #DESCRIPTION=This script created by Levi45 @vuplus-team.com
 ###############################################################################
-Ncamserversh="http://vuplus-team.com/addons/ArmMulticam/Armsh/Ncamserver_Updater.sh"
+Ncamserversh="http://vuplus-team.com/addons/ArmMulticam/Arm/Ncamserver_Updater.sh"
 Ncamserver="http://vuplus-team.com/addons/ncam.server"
 echo ""
 echo ""

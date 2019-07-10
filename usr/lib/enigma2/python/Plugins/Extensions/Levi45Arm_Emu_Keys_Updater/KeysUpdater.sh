@@ -1,7 +1,7 @@
 #!/bin/sh
 #DESCRIPTION=This script created by Levi45 @vuplus-team.com
 ###############################################################################
-KeysUpdater="http://vuplus-team.com/addons/ArmMulticam/Armsh/KeysUpdater.sh"
+KeysUpdater="http://vuplus-team.com/addons/ArmMulticam/Arm/KeysUpdater.sh"
 SoftcamKeys="http://vuplus-team.com/addons/SoftCam.Key"
 Constantcw="http://vuplus-team.com/addons/constant.cw"
 echo ""
