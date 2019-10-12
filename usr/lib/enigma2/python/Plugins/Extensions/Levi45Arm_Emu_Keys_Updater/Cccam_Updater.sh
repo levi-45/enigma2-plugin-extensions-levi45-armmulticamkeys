@@ -1,12 +1,12 @@
 #!/bin/sh
-#DESCRIPTION=This script created by Levi45 @www.vuplus-team.com
+#DESCRIPTION=This script created by Levi45 @www.sat-linux.com
 ###############################################################################
 rm -R /usr/camd/CCcam_*
 ###############################################################################
 # Download and install CCcam
 cd /tmp 
 set -e
-wget "http://vuplus-team.com/addons/ArmMulticam/cccam.tar.gz"
+wget "http://sat-linux.com/addons/ArmMulticam/cccam.tar.gz"
 
 tar -xzf cccam.tar.gz -C /
 set +e
@@ -15,7 +15,7 @@ cd ..
 
 sync
 echo "#########################################################"
-echo "#              Levi45 @WWW.VUPLUS-TEAM.COM              #"
+echo "#               Levi45 @WWW.SAT-LINUX.COM               #"
 echo "#########################################################"
 echo "#             CCcam INSTALLED SUCCESSFULLY              #"
 echo "#########################################################"

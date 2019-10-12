@@ -1,12 +1,12 @@
 #!/bin/sh
-#DESCRIPTION=This script created by Levi45 @www.vuplus-team.com
+#DESCRIPTION=This script created by Levi45 @www.sat-linux.com
 ###############################################################################
 rm -R /usr/camd/Ncam_*
 ###############################################################################
 # Download and install Ncam
 cd /tmp 
 set -e
-wget "http://vuplus-team.com/addons/ArmMulticam/ncam.tar.gz"
+wget "http://sat-linux.com/addons/ArmMulticam/ncam.tar.gz"
 
 tar -xzf ncam.tar.gz -C /
 set +e
@@ -15,7 +15,7 @@ cd ..
 
 sync
 echo "#########################################################"
-echo "#              Levi45 @WWW.VUPLUS-TEAM.COM              #"
+echo "#               Levi45 @WWW.SAT-LINUX.COM               #"
 echo "#########################################################"
 echo "#               Ncam INSTALLED SUCCESSFULLY             #"
 echo "#########################################################"

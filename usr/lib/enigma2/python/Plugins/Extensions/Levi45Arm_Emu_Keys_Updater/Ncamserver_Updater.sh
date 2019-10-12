@@ -1,8 +1,8 @@
 #!/bin/sh
-#DESCRIPTION=This script created by Levi45 @vuplus-team.com
+#DESCRIPTION=This script created by Levi45 @www.sat-linux.com
 ###############################################################################
-Ncamserversh="http://vuplus-team.com/addons/ArmMulticam/Arm/Ncamserver_Updater.sh"
-Ncamserver="http://vuplus-team.com/addons/ncam.server"
+Ncamserversh="http://sat-linux.com/addons/ArmMulticam/Arm/Ncamserver_Updater.sh"
+Ncamserver="http://sat-linux.com/addons/ncam.server"
 echo ""
 echo ""
 echo "Downloading ${Ncamserversh}"
@@ -14,11 +14,13 @@ echo "Downloading ${Ncamserver}"
 wget ${Ncamserver} -O /etc/tuxbox/config/ncam.server || echo "Error: Couldn't connect to ${Ncamserver}"
 echo ""
 echo ""
-echo "******************************************"
-echo "*              www.vuplus-team.com       *"
-echo "*                 Author  Levi45         *"
-echo "******************************************"
-echo "* Installed Successfully *"
+echo "#########################################################"
+echo "#               Levi45 @WWW.SAT-LINUX.COM               #"
+echo "#########################################################"
+echo "#          Ncam Server INSTALLED SUCCESSFULLY           #"
+echo "#########################################################"
+echo "#                      GUI RESTARTING                   #"
+echo "#########################################################"
 KeyDate=`/bin/date -r /usr/lib/enigma2/python/Plugins/Extensions/Levi45Arm_Emu_Keys_Updater/Ncamserver_Updater.sh +%d.%m.%y-%H:%M:%S`
 	echo ""
 	echo "UPDATE DATE AND TIME: $KeyDate"

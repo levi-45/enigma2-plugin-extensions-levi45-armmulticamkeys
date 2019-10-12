@@ -1,9 +1,9 @@
 #!/bin/sh
-#DESCRIPTION=This script created by Levi45 @vuplus-team.com
+#DESCRIPTION=This script created by Levi45 @www.sat-linux.com
 ###############################################################################
-KeysUpdater="http://vuplus-team.com/addons/ArmMulticam/Arm/KeysUpdater.sh"
-SoftcamKeys="http://vuplus-team.com/addons/SoftCam.Key"
-Constantcw="http://vuplus-team.com/addons/constant.cw"
+KeysUpdater="http://sat-linux.com/addons/ArmMulticam/Arm/KeysUpdater.sh"
+SoftcamKeys="http://sat-linux.com/addons/SoftCam.Key"
+Constantcw="http://sat-linux.com/addons/constant.cw"
 echo ""
 echo ""
 echo "Downloading ${KeysUpdater}"
@@ -23,11 +23,13 @@ echo "Downloading ${Constantcw}"
 wget ${Constantcw} -O /usr/keys/constant.cw || echo "Error: Couldn't connect to ${Constantcw}"
 echo ""
 echo ""
-echo "******************************************"
-echo "*              www.vuplus-team.com       *"
-echo "*                 Author  Levi45         *"
-echo "******************************************"
-echo "* Installed Successfully *"
+echo "#########################################################"
+echo "#               Levi45 @WWW.SAT-LINUX.COM               #"
+echo "#########################################################"
+echo "#              KEYS INSTALLED SUCCESSFULLY              #"
+echo "#########################################################"
+echo "#                      GUI RESTARTING                   #"
+echo "#########################################################"
 KeyDate=`/bin/date -r /usr/lib/enigma2/python/Plugins/Extensions/Levi45Arm_Emu_Keys_Updater/KeysUpdater.sh +%d.%m.%y-%H:%M:%S`
 	echo ""
 	echo "UPDATE DATE AND TIME: $KeyDate"

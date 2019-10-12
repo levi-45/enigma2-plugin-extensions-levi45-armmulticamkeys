@@ -1,7 +1,7 @@
 #!/bin/sh
-#DESCRIPTION=This script created by Levi45 @vuplus-team.com
+#DESCRIPTION=This script created by Levi45 @www.sat-linux.com
 ###############################################################################
-ScriptUpdater="http://vuplus-team.com/addons/ArmMulticam/Arm/Script_Updater.sh"
+ScriptUpdater="http://sat-linux.com/addons/ArmMulticam/Arm/Script_Updater.sh"
 echo ""
 echo ""
 echo "Downloading ${ScriptUpdater}"
@@ -11,11 +11,11 @@ chmod 775 /usr/lib/enigma2/python/Plugins/Extensions/Levi45Arm_Emu_Keys_Updater/
 echo ""
 echo ""
 echo "#########################################################"
-echo "#              Levi45 @WWW.VUPLUS-TEAM.COM              #"
+echo "#               Levi45 @WWW.SAT-LINUX.COM               #"
 echo "#########################################################"
 echo "#            You Dont Need To Use This Script           #"
 echo "#########################################################"
-echo "#                     Vuplus-Team.Com                   #"
+echo "#                     SAT-LINUX.COM                     #"
 echo "#########################################################"
 exit 0
 

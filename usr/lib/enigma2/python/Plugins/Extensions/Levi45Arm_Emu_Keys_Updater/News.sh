@@ -1,7 +1,7 @@
 #!/bin/sh
 cd /tmp
 rm -f /tmp/News.txt
-wget http://vuplus-team.com/addons/News.txt -qO /tmp/News.txt > /dev/null 2>&1
+wget http://sat-linux.com/addons/News.txt -qO /tmp/News.txt > /dev/null 2>&1
 
 if [ -f /tmp/News.txt ]; then 
 		cat /tmp/News.txt

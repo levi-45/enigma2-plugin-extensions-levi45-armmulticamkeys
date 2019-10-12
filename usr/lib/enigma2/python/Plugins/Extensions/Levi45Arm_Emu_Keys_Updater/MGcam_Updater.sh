@@ -1,12 +1,12 @@
 #!/bin/sh
-#DESCRIPTION=This script created by Levi45 @www.vuplus-team.com
+#DESCRIPTION=This script created by Levi45 @www.sat-linux.com
 ###############################################################################
 rm -R /usr/camd/MGcamd_*
 ###############################################################################
 # Download and install MGcamd
 cd /tmp 
 set -e
-wget "http://vuplus-team.com/addons/ArmMulticam/mgcamd.tar.gz"
+wget "http://sat-linux.com/addons/ArmMulticam/mgcamd.tar.gz"
 
 tar -xzf mgcamd.tar.gz -C /
 set +e
@@ -15,9 +15,9 @@ cd ..
 
 sync
 echo "#########################################################"
-echo "#              Levi45 @WWW.VUPLUS-TEAM.COM              #"
+echo "#               Levi45 @WWW.SAT-LINUX.COM               #"
 echo "#########################################################"
-echo "#              MGcamd INSTALLED SUCCESSFULLY            #"
+echo "#              MGcam INSTALLED SUCCESSFULLY             #"
 echo "#########################################################"
 echo "#                      GUI RESTARTING                   #"
 echo "#########################################################"
