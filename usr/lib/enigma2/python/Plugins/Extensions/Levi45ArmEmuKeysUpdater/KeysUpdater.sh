@@ -7,9 +7,9 @@ Constantcw="http://sat-linux.com/addons/constant.cw"
 echo ""
 echo ""
 echo "Downloading ${KeysUpdater}"
-wget ${KeysUpdater} -O /usr/lib/enigma2/python/Plugins/Extensions/Levi45Arm_Emu_Keys_Updater/KeysUpdater.sh || echo "Error: Couldn't connect to ${KeysUpdater}"
+wget ${KeysUpdater} -O /usr/lib/enigma2/python/Plugins/Extensions/Levi45ArmEmuKeysUpdater/KeysUpdater.sh || echo "Error: Couldn't connect to ${KeysUpdater}"
 echo ""
-chmod 775 /usr/lib/enigma2/python/Plugins/Extensions/Levi45Arm_Emu_Keys_Updater/KeysUpdater.sh
+chmod 775 /usr/lib/enigma2/python/Plugins/Extensions/Levi45ArmEmuKeysUpdater/KeysUpdater.sh
 echo ""
 echo "Downloading ${SoftcamKeys}"
 wget ${SoftcamKeys} -O /usr/keys/SoftCam.Key || echo "Error: Couldn't connect to ${SoftcamKeys}"
@@ -30,11 +30,6 @@ echo "#              KEYS INSTALLED SUCCESSFULLY              #"
 echo "#########################################################"
 echo "#                      GUI RESTARTING                   #"
 echo "#########################################################"
-KeyDate=`/bin/date -r /usr/lib/enigma2/python/Plugins/Extensions/Levi45Arm_Emu_Keys_Updater/KeysUpdater.sh +%d.%m.%y-%H:%M:%S`
-	echo ""
-	echo "UPDATE DATE AND TIME: $KeyDate"
-	echo ""
-echo "Restarting Enigma2"
 init 4
 killall -9 enigma2 > /dev/null 2>&1
 init 3
