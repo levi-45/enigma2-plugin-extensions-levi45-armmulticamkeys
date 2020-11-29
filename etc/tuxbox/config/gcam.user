@@ -1,43 +1,10 @@
-##"*******************************************"
-##"*         levi45@ sat-linux.com           *"
-##"*******************************************"
+##"*************************"
+##"*         levi45        *"
+##"*************************"
 
 [account]
-user                          = root
-keepalive                     = 1
-monlevel                      = 4
+user                          = dvbapi
+pwd                           = dvbapi
 au                            = 1
-group                         = 1,2,3,4,5,6,20
+group                         = 1
 
-[account]
-user                          = update
-pwd                           = ents
-description                   = Update Entitlements
-caid                          = 1810
-au                            = Card_Blanca
-group                         = 1,2,3,4,5,6,20
-cccignorereshare              = 0
-
-#[account]
-#user                          = nombre_peer1
-#pwd                           = password_peer1
-#allowedprotocols              = cccam
-#group                         = 1,2,3,4,20
-#uniq                          = 1
-#cccmaxhops                    = 2
-#cccreshare                    = 2
-#cccignorereshare              = 1
-#cccstealth                    = 1
-#keepalive                     = 1
-
-#[account]
-#user                          = nombre_peer2
-#pwd                           = password_peer2
-#allowedprotocols              = cccam
-#group                         = 1,2,3,4,20
-#uniq                          = 1
-#cccmaxhops                    = 2
-#cccreshare                    = 2
-#cccignorereshare              = 1
-#cccstealth                    = 1
-#keepalive                     = 1

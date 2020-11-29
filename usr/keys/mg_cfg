@@ -1,31 +1,32 @@
-##"*******************************************"
-##"*         levi45@ sat-linux.com           *"
-##"*******************************************"
+##"*************************"
+##"*         levi45        *"
+##"*************************"
+
 # EMM messages
 #    00 don't show any EMMs (default)
 #    01 show only valid EMMs
 #    02 show valid and bad EMMs with complete data display
-M: { 01 }
+M: { 00 }
 
 # ECM messages
 #    00 don't show anything about ecm
 #    01 normal mode, show pids processed, decoded ecm and cw
 #    02 verbose mode, show valid and bad ECMs with data
-C: { 00 }
+C: { 01 }
 
 # AU
 #    00 disable, no emm pids processed
 #    01 enable, emm pids always processed for soft-au and shared cards
 #    02 auto, emm started only if channel cant be decoded
 #    03 process emm pids for network cards update only
-A: { 02 }
+A: { 01 }
 
 # key update (sum 01 or 02 with 04)
 #    01 update only new keys, default setting
 #    02 update all keys (used for valid PMK checking)
 #    04 enable TPS au
 #    + tps SID, which pmt pid contains au pid
-U: { 01 }
+U: { 01 } 0x12c0
 
 # config files folder (softcam, autoroll, ignore/priority)
 #    00 files in /var/keys
@@ -40,7 +41,7 @@ T: { 00 }
 #    08 gbox netclient
 #    32	cccamd netclient, card list saved as /tmp/cccamd.info 
 #    	(ECM only, supported server version up to 2.1.1, later not work)
-G: { 37 }
+G: { 01 }
 
 # network retry, use summ for several options
 #    00 disable
@@ -51,19 +52,19 @@ G: { 37 }
 #    mg will reconnect to server, if no answer to last XX ecm/keepalive or
 #    if no answer for last ecm or keepalive sent for YY seconds
 #    set to 0 to disable
-N: { 07 } 5 00
+N: { 07 } 5 30
 
 # network ecm timeout in seconds
-K: { 02 }
+K: { 05 }
 
 # newcamd dead routes connect retry, sec
-Q: { 10 }
+Q: { 600 }
 
 # network shares priority
 # 00 gbox, newcamd, cccamd, radegast, camd3 (default)
 # 01 camd3, radegast, cccamd, gbox, newcamd
 # 02 cccamd, newcamd, camd3, gbox, radegast
-P: { 01 }
+P: { 02 }
 
 # on screen display type
 #    00 No OSD (default)
@@ -71,7 +72,7 @@ P: { 01 }
 #    02 enigma
 #    03 relook
 #    + user password for http auth
-O: { 00 } username password
+O: { 01 } root newcs
 
 # on screen display Options, summ of:
 #    01 show emu ecm 
@@ -79,7 +80,7 @@ O: { 00 } username password
 #    04 show decoding failed / fta
 #    08 show emm keys update
 #    + web port to use for osd
-S: { 03 } 80
+S: { 03 } 8080
 
 # Log option, summ of:
 #    00 off
@@ -87,7 +88,7 @@ S: { 03 } 80
 #    02 log to console
 #    04 file, appended ! delete it by yourself, before it eat all your hdd
 #    + IP udp-port log-file-name
-L: { 00 } 172.16.1.1 28007 /tmp/mgcamd.log
+L: { 02 } 127.0.0.1 28007 /tmp/mgcamd.log
 
 # keep ecm cache, seconds
 # every cache entry takes 28 bytes, so 24h cache will take *only* 240-400kb of memory,
@@ -100,14 +101,14 @@ E: { 15 }
 #    01 Ecm pids cache, store pids used to decode in /tmp/ca_cache.list at exit, load at startup, same syntax as restore.list
 #    02 Ecm data cache, remember CW for (E:) time 
 #    04 Emm cache for network cards, do not resend the same emm twice, cache not cleared until restart
-H: { 01 }
+H: { 07 }
 
 # reread files, summ of: 
 #    00 No (default)
 #    01 reread config file on channel change (including priority and ignore, but not replace/cache)
 #    02 reread SoftCam.Key on channel change
 #    04 reread SoftCam.Key if file changed
-R: { 04 }
+R: { 00 }
 
 # debug, summ of
 # 00 off (default)
@@ -131,7 +132,7 @@ D: { 00 }
 # 08 stapi/kathrein
 # 09 stapi/ipbox
 # 11 stapi/openbox
-B: { 13 }
+B: { 06 }
 
 # map all 180x nagra caids to 1801
 # default is 01
