@@ -15,7 +15,7 @@ echo "#                           Levi45                      #"
 echo "#########################################################"
 echo "#            You Dont Need To Use This Script           #"
 echo "#########################################################"
-echo "#                     SAT-LINUX.COM                     #"
+echo "#                    SATELLITE-FORUM.COM                #"
 echo "#########################################################"
 sleep 2
 exit 0

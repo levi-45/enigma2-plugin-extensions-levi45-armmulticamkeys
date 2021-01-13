@@ -1,6 +1,7 @@
 ##"*************************"
 ##"*         levi45        *"
 ##"*************************"
+
 # types:
 #	P - Priority
 #		format:
@@ -15,16 +16,3 @@
 #		format:
 #			D: <caid>:[<provider>]:[<srvid>]:[<ecmpid>] <delay (ms)>
 #
-### ADD ###
-A: ::0028:0102::: 2600:000000:1FFF ;ERT HD
-A: ::000A:0104::: 2600:000000:1FFF ;ERT 1
-A: ::0014:0100::: 2600:000000:1FFF ;ERT 2
-M: 5581:000000 4AEE:000000 ; POLARiS 1,9E
-
-### Emu_key ###
-P: 0E00:000000 ;PowerVu
-P: 2600:000000 ;BISS
-P: 2602:000000 ;BISS2
-P: 1010:000000 ;TANDBERG
-P: 4AEE ;
-
