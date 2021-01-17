@@ -27,9 +27,4 @@ echo "#                           Levi45                      #"
 echo "#########################################################"
 echo "#               Config INSTALLED SUCCESSFULLY           #"
 echo "#########################################################"
-echo "#                      GUI RESTARTING                   #"
-echo "#########################################################"
-init 4
-killall -9 enigma2 > /dev/null 2>&1
-init 3
 exit 0

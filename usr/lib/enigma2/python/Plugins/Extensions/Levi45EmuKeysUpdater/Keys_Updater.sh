@@ -37,12 +37,7 @@ echo "#                           Levi45                      #"
 echo "#########################################################"
 echo "#              KEYS INSTALLED SUCCESSFULLY              #"
 echo "#########################################################"
-echo "#                      GUI RESTARTING                   #"
-echo "#########################################################"
 KeyDate=`/bin/date -r /usr/lib/enigma2/python/Plugins/Extensions/Levi45EmuKeysUpdater/Keys_Updater.sh +%d.%m.%y-%H:%M:%S`
 	echo ""
 	echo "UPDATE DATE AND TIME: $KeyDate"
-init 4
-killall -9 enigma2 > /dev/null 2>&1
-init 3
 exit 0
