@@ -1,0 +1,5 @@
+#!/bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/Levi45MulticamManager > /dev/null 2>&1
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/Levi45EmuKeysUpdater > /dev/null 2>&1
+rm -rf /usr/camscript > /dev/null 2>&1
+exit 0

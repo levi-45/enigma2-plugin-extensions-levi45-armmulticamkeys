@@ -1,0 +1,11 @@
+Package: enigma2-plugin-extensions-levi45multicammanager
+Version: 8.0
+Description: Multicam Manager by Levi45
+Section: misc
+Priority: optional
+Maintainer: levi45
+Architecture: all
+Depends: enigma2
+HomePage: non
+Source: non
+
