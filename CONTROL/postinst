@@ -282,15 +282,7 @@ else ## Try to Download libcrypto from feed
         exit 1
     fi
 fi
-############################## ipk remove ####################
-echo
-rm -rf /tmp/*.ipk
-echo
-echo
+echo "*                                *"
 echo "*   Levi45 @satellite-forum.com  *"
-echo "*   Installed Successfully *"
-echo "Restarting Enigma2 to load..."
-init 4
-killall -9 enigma2 > /dev/null 2>&1
-init 3
-exit 0
+echo "*                                *" 
+
