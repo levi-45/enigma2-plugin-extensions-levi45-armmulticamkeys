@@ -37,6 +37,8 @@ echo "#                           Levi45                      #"
 echo "#########################################################"
 echo "#              KEYS INSTALLED SUCCESSFULLY              #"
 echo "#########################################################"
+echo "#                    SATELLITE-FORUM.COM                #"
+echo "#########################################################"
 KeyDate=`/bin/date -r /usr/lib/enigma2/python/Plugins/Extensions/Levi45EmuKeysUpdater/Keys_Updater.sh +%d.%m.%y-%H:%M:%S`
 	echo ""
 	echo "UPDATE DATE AND TIME: $KeyDate"
